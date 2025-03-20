@@ -13,11 +13,42 @@
         <title>Javascript作業</title>
 
         <style>
+            .container {
+                margin-top: 20px;
+            }
+
             div#myId{
                 background-color: antiquewhite;
-                padding: 10px;
+                padding: 30px;
                 margin: 0 auto;
                 margin-top: 20px;
+                <div class="image-container"></div>
+            }
+
+            .image-container {
+                position: fixed; /* 固定圖片在視窗右邊 */
+                top: 50%; /* 垂直置中 */
+                right: 20px; /* 距離右邊 20px */
+                transform: translateY(-50%); /* 修正垂直置中的偏移 */
+                background-image: url('ing/cat.jpg'); /* 替換為你的圖案檔案路徑 */
+                background-size: contain; /* 圖案大小，使用 contain 讓圖案完整顯示 */
+                background-repeat: no-repeat; /* 防止圖案重複 */
+                background-position: center; /* 圖案置中 */
+                width: 200px; /* 設定圖案容器寬度 */
+                height: 200px; /* 設定圖案容器高度 */
+            }
+
+            table,tr,td{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            table{
+                text-align: center;
+                margin: 0 auto;
+            }
+            td{
+                padding: 5px;
+                text-align: center;
             }
 
         </style>
@@ -39,7 +70,7 @@
                 }
                 str+="</table>";
 
-                document.getElementById("output").innerHTML = str;
+                document.getElementById("myId").innerHTML = str;
 
             }
         </script>
@@ -47,9 +78,13 @@
 
     <body>
         <h1>N*N乘法表</h1>
+        <label for="numberInput">請輸入數字:</label>
         <input type="number" id="numberInput" placeholder="請輸入數字">
-        <button onclick="myFunction()">送出</button>
-        <div id="output"></div>
+        <input type="button" value="OK" title="OK" onclick="myFunction()">
+        <div id="myId"></div>
+
+        <div class="image-container"></div>
+
     </body>
 
 </html>

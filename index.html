@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,inital-scale=1.0">
@@ -13,18 +13,38 @@
         <p>Hello JavaScript</p>
 
         <style>
+
+            h1 {
+                text-align: center; /* 置中標題 */
+                color: white; /* 設定標題文字顏色 */
+            }
+            
+            body {
+                /* 設定背景圖片 */
+                background-image: url('ing/cosmic starry sky.jpg'); /* 確保圖片路徑正確 */
+                background-size: cover; /* 讓圖片覆蓋整個背景 */
+                background-position: center; /* 置中圖片 */
+                background-repeat: no-repeat; /* 防止圖片重複 */
+                height: 100vh; /* 設定背景高度為視窗高度 */
+                margin: 0; /* 移除預設的邊距 */
+                
+                /* 淡化效果 */
+                background-color: rgba(255, 255, 255, 0.5); /* 加入白色半透明覆蓋 */
+                background-blend-mode: lighten; /* 混合模式 */
+            }
+
             a{
                 color: white;
-                background-color: darkblue;
+                background-color: rgb(193, 255, 242);
                 text-decoration: none;
                 padding: 10px;
-                border: 1px solid gpld;
+                border: 1px solid rgb(234, 255, 175);
             }
             a:link{
-                color: red;
+                color: rgb(255, 193, 135);
             }
             a:visited{
-                color: green;
+                color: rgb(0, 148, 216);
             }
         </style>
 

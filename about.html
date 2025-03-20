@@ -9,21 +9,60 @@
 
     <body>
         <h3>王芷涵 WANG ZHI HAN</h3>
+        <table>
+            <tr>
+                <td>
+                    <ul>
+                        <li>學號: 5B1G0006</li>
+                        <li>系級: 資工三甲</li>
+                        <li>姓名: 王芷涵</li>
+                        <li>生日: 2007/08/17</li>
+                        <li>興趣: 看書、遊戲、睡覺</li>
 
+                        <li>學歷: </li>
+                        <ul>
+                            <li>南台科技大學</li>
+                        </ul>
+
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <!-- 新增返回首頁的連結 -->
+        <a href="index.html">返回首頁</a>
 
         <style>
+
+            h3 {
+                color: white; /* 設定標題文字顏色 */
+            }
+
+            body {
+                /* 設定背景圖片 */
+                background-image: url('ing/starry night.jpg'); /* 確保圖片路徑正確 */
+                background-size: cover; /* 讓圖片覆蓋整個背景 */
+                background-position: center; /* 置中圖片 */
+                background-repeat: no-repeat; /* 防止圖片重複 */
+                height: 100vh; /* 設定背景高度為視窗高度 */
+                margin: 0; /* 移除預設的邊距 */
+                
+                /* 淡化效果 */
+                background-color: rgba(255, 255, 255, 0.5); /* 加入白色半透明覆蓋 */
+                background-blend-mode: lighten; /* 混合模式 */
+            }
+
             a{
                 color: white;
-                background-color: darkblue;
+                background-color: rgb(193, 255, 242);
                 text-decoration: none;
                 padding: 10px;
-                border: 1px solid gpld;
+                border: 1px solid rgb(234, 255, 175);
             }
             a:link{
-                color: red;
+                color: rgb(255, 193, 135);
             }
             a:visited{
-                color: green;
+                color: rgb(0, 148, 216);
             }
         </style>
 

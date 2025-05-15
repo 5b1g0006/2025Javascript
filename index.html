@@ -7,9 +7,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,inital-scale=1.0">
         <title>Javascript</title>
+
+        <h1>103下學期五專三年級JavaScript程式設計課程</h1> <!-- 標題 -->
+        <p>Hello JavaScript</p> <!-- 段落內容 -->
+
     </head>
 
     <body>
+
         <!-- 連結 -->
         <!-- 目前所用到的網頁連結 (複製用)
         <a href="index.html">返回首頁</a>
@@ -20,15 +25,16 @@
         <a href="about.html">關於我</a>
         <a href="research.html">研究</a>
         <a href="homework.html">作業</a>
-
-        <h1>103下學期五專三年級JavaScript程式設計課程</h1>
-        <p>Hello JavaScript</p>
+        
+        <!-- 連結 -->
+        
 
         <style>
-
-            h1 {
+            
+            /* h1、p (標題和段落內容) 的css */
+            h1, p {
                 text-align: center; /* 置中標題 */
-                color: white; /* 設定標題文字顏色 */
+                color: rgb(0, 217, 255); /* 設定標題文字顏色 */
             }
 
 
@@ -36,7 +42,7 @@
                 /* 設定背景圖片與漸層 */
                 background-image: linear-gradient(to top left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), 
                 url('ing/Sea of Trees.jpg'); /* 確保圖片路徑正確 */
-                background-size: cover; /* 讓圖片覆蓋整個背景 */
+                background-size: contain; /* 讓圖片覆蓋整個背景 */
                 background-position: center; /* 置中圖片 */
                 background-repeat: no-repeat; /* 防止圖片重複 */
                 height: 100vh; /* 設定背景高度為視窗高度 */

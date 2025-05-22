@@ -11,6 +11,14 @@
         <h1>103下學期五專三年級JavaScript程式設計課程</h1> <!-- 標題 -->
         <p>Hello JavaScript</p> <!-- 段落內容 -->
 
+        <link rel="stylesheet" href="index.css"> <!-- 引入首頁的CSS樣式(index.css) -->
+        <!-- 
+            rel="stylesheet"：用來連結外部 CSS。
+            rel="icon"：用來設定網站小圖示（favicon）。
+            rel="preload"：用來預先加載資源（如字體、圖片）。
+            rel="alternate"：用來提供不同語言版本的網頁。 
+        -->
+
     </head>
 
     <body>
@@ -24,54 +32,32 @@
         <a href="https://5b1g0006.github.io/2025_WaterPuzzle/"> 水立方試管遊戲 作業 </a> //作業檔案名稱:2025_WaterPuzzle 
         <a href="https://5b1g0006.github.io/2025-react-app/">React + Vite 作業 </a> //作業檔案名稱:2025-react-app 
         -->
-        <a href="about.html">關於我</a>
-        <a href="research.html">研究</a>
-        <a href="homework.html">作業</a>        
-        <a href="https://5b1g0006.github.io/2025_WaterPuzzle/"> 水立方試管遊戲 作業 </a> <!-- 作業檔案名稱:2025_WaterPuzzle -->
-        <a href="https://5b1g0006.github.io/2025-react-app/">React + Vite 作業</a> <!-- 作業檔案名稱:2025-react-app -->
-
+        <div style="
+        display: flex;
+        justify-content: center;  /* 水平置中 */
+        gap: 10px;                /* 連結間距 */
+        flex-wrap: wrap;          /* 換行排列（如有需要） */
+    ">
+            <a href="about.html">關於我</a>
+            <a href="research.html">研究</a>
+            <a href="homework.html">作業</a>        
+            <a href="https://5b1g0006.github.io/2025_WaterPuzzle/"> 水立方試管遊戲 作業 </a> <!-- 作業檔案名稱:2025_WaterPuzzle -->
+            <a href="https://5b1g0006.github.io/2025-react-app/">React + Vite 作業</a> <!-- 作業檔案名稱:2025-react-app -->
+        </div>
         
+        <div style="
+        width: 50%; 
+        height: 50%; 
+        background-image: 
+          linear-gradient(to top left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
+          url('ing/Sea of Trees.jpg');
+        background-size: contain;      /* ✅讓圖片縮放到容器大小內，完整顯示 */
+        background-repeat: no-repeat;  /* ✅防止重複 */
+        background-position: center;   /* ✅置中圖片 */
+        margin: 20px auto; /* ✅置中圖片 */
+      "></div>
+      
         <!-- 連結 -->
-        
-
-        <style>
-            
-            /* h1、p (標題和段落內容) 的css */
-            h1, p {
-                text-align: center; /* 置中標題 */
-                color: rgb(0, 217, 255); /* 設定標題文字顏色 */
-            }
-
-
-            body {
-                /* 設定背景圖片與漸層 */
-                background-image: linear-gradient(to top left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), 
-                url('ing/Sea of Trees.jpg'); /* 確保圖片路徑正確 */
-                background-size: contain; /* 讓圖片覆蓋整個背景 */
-                background-position: center; /* 置中圖片 */
-                background-repeat: no-repeat; /* 防止圖片重複 */
-                height: 100vh; /* 設定背景高度為視窗高度 */
-                margin: 0; /* 移除預設的邊距 */
-                
-                /* 淡化效果 */
-                background-color: rgba(255, 255, 255, 0.5); /* 加入白色半透明覆蓋 */
-                background-blend-mode: lighten; /* 混合模式 */
-            }
-
-            a{
-                color: white;
-                background-color: rgb(193, 255, 242);
-                text-decoration: none;
-                padding: 10px;
-                border: 1px solid rgb(234, 255, 175);
-            }
-            a:link{
-                color: rgb(255, 193, 135);
-            }
-            a:visited{
-                color: rgb(0, 148, 216);
-            }
-        </style>
 
     </body>
 </html>

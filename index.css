@@ -9,7 +9,7 @@ h1, p {
 body {
     background: 
         linear-gradient(rgba(0, 0, 50, 0.6), rgba(0, 0, 80, 0.2)), /* 深藍透明背景 */
-        url('ing/Sea of Trees.jpg');
+        url('ing/starry night.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

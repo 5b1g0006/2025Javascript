@@ -62,19 +62,10 @@
 
     <script>
         function loadPage(url) {
-    const frame = document.getElementById('mainFrame');
-    if (url === 'index.html') {
-        frame.src = '';
-        frame.style.backgroundImage = "linear-gradient(to top left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), url('ing/Sea of Trees.jpg')";
-        frame.style.backgroundSize = "contain";
-        frame.style.backgroundRepeat = "no-repeat";
-        frame.style.backgroundPosition = "center";
-        frame.style.backgroundColor = "#fff";
-    } else {
-        frame.src = url;
-        frame.style.background = "#fff"; // 載入內容時移除背景圖
-    }
-}
+            const frame = document.getElementById('mainFrame');
+            frame.src = url;
+            frame.style.background = "#fff"; // 載入內容時移除背景圖
+        }
     </script>
         
         <!-- <div style="

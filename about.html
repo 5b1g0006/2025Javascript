@@ -50,26 +50,22 @@
 
             div#myresearch {
                 width: 20%;
-                background-color: rgba(233, 254, 255, 0.2); /* 使用 rgba 設定背景透明度 */
+                background-color: rgba(233, 254, 255, 0.2);
                 padding: 30px;
             }
 
             h3 {
-                color: white; /* 設定標題文字顏色 */
+                color: white;
             }
 
             body {
-                /* 設定背景圖片 */
-                background-image: url('ing/starry night.jpg'); /* 確保圖片路徑正確 */
-                background-size: cover; /* 讓圖片覆蓋整個背景 */
-                background-position: center; /* 置中圖片 */
-                background-repeat: no-repeat; /* 防止圖片重複 */
-                height: 100vh; /* 設定背景高度為視窗高度 */
-                margin: 0; /* 移除預設的邊距 */
-                
-                /* 淡化效果 */
-                background-color: rgba(255, 255, 255, 0.5); /* 加入白色半透明覆蓋 */
-                background-blend-mode: lighten; /* 混合模式 */
+                /* 只保留這些，刪除 background-color 和 background-blend-mode */
+        
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 100vh;
+                margin: 0;
             }
 
             a{

@@ -33,59 +33,44 @@
         <a href="https://5b1g0006.github.io/2025-react-app/">React + Vite 作業 </a> //作業檔案名稱:2025-react-app 
         -->
         <div style="
-        display: flex;
-        justify-content: center;  /* 水平置中 */
-        gap: 10px;                /* 連結間距 */
-        flex-wrap: wrap;          /* 換行排列（如有需要） */
-    ">
-        <a href="index.html">返回首頁</a>
-        <a href="#" onclick="loadPage('about.html')">關於我</a>
-        <a href="#" onclick="loadPage('research.html')">研究</a>
-        <a href="#" onclick="loadPage('homework.html')">作業</a>
-        <a href="#" onclick="loadPage('https://5b1g0006.github.io/2025_WaterPuzzle/')">水立方試管遊戲 作業</a>
-        <a href="#" onclick="loadPage('https://5b1g0006.github.io/2025-react-app/')">React + Vite 作業</a>
-    </div>
-
-<div id="mainFrame" style="
-    width: 50%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px auto;
-    font-size: 2rem;
-    color: #333;
-    background-image: linear-gradient(to top left, rgba(255,255,255,0.9), rgba(255,255,255,0));
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-">
-    <!-- 這裡可以放首頁介紹文字 -->
-     
-</div>
-
-<script>
-    function loadPage(url) {
-        const frame = document.getElementById('mainFrame');
-        frame.innerHTML = `<iframe src="${url}" style="width:100%;height:100%;border:none;"></iframe>`;
-        frame.style.background = "#fff"; // 載入內容時移除背景圖
-    }
-</script>
-        
-        <!-- <div style="
-            width: 50%; 
-            height: 50%; 
-            background-image: 
-            linear-gradient(to top left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
-            url('ing/Sea of Trees.jpg');
-            background-size: contain;      /* ✅讓圖片縮放到容器大小內，完整顯示 */
-            background-repeat: no-repeat;  /* ✅防止重複 */
-            background-position: center;   /* ✅置中圖片 */
-            margin: 20px auto; /* ✅置中圖片 */
+            display: flex;
+            justify-content: center;  /* 水平置中 */
+            gap: 10px;                /* 連結間距 */
+            flex-wrap: wrap;          /* 換行排列（如有需要） */
         ">
-        </div> -->
-      
-        <!-- 連結 -->
+            <a href="index.html">返回首頁</a>
+            <a href="#" onclick="loadPage('about.html')">關於我</a>
+            <a href="#" onclick="loadPage('research.html')">研究</a>
+            <a href="#" onclick="loadPage('homework.html')">作業</a>
+            <a href="#" onclick="loadPage('https://5b1g0006.github.io/2025_WaterPuzzle/')">水立方試管遊戲 作業</a>
+            <a href="#" onclick="loadPage('https://5b1g0006.github.io/2025-react-app/')">React + Vite 作業</a>
+        </div>
+
+        <div id="mainFrame" style="
+            width: 50%;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            font-size: 2rem;
+            color: #333;
+            background-image: linear-gradient(to top left, rgba(255,255,255,0.9), rgba(255,255,255,0));
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        ">
+            <!-- 這裡可以放首頁介紹文字 -->
+     
+        </div>
+
+        <script>
+            function loadPage(url) {
+                const frame = document.getElementById('mainFrame');
+                frame.innerHTML = `<iframe src="${url}" style="width:100%;height:100%;border:none;"></iframe>`;
+                // frame.style.background = "#fff"; // 載入內容時移除背景圖
+            }
+        </script>
 
     </body>
 </html>

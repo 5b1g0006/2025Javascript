@@ -38,24 +38,57 @@
         gap: 10px;                /* 連結間距 */
         flex-wrap: wrap;          /* 換行排列（如有需要） */
     ">
-            <a href="about.html">關於我</a>
-            <a href="research.html">研究</a>
-            <a href="homework.html">作業</a>        
-            <a href="https://5b1g0006.github.io/2025_WaterPuzzle/"> 水立方試管遊戲 作業 </a> <!-- 作業檔案名稱:2025_WaterPuzzle -->
-            <a href="https://5b1g0006.github.io/2025-react-app/">React + Vite 作業</a> <!-- 作業檔案名稱:2025-react-app -->
-        </div>
+        <a href="index.html">返回首頁</a>
+        <a href="#" onclick="loadPage('about.html')">關於我</a>
+        <a href="#" onclick="loadPage('research.html')">研究</a>
+        <a href="#" onclick="loadPage('homework.html')">作業</a>
+        <a href="#" onclick="loadPage('https://5b1g0006.github.io/2025_WaterPuzzle/')">水立方試管遊戲 作業</a>
+        <a href="#" onclick="loadPage('https://5b1g0006.github.io/2025-react-app/')">React + Vite 作業</a>
+    </div>
+
+<iframe id="mainFrame" style="
+    width: 50%;
+    height: 400px;
+    border: none;
+    display: block;
+    margin: 20px auto;
+    background-image: 
+        linear-gradient(to top left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
+        url('ing/Sea of Trees.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+"></iframe>
+
+    <script>
+        function loadPage(url) {
+    const frame = document.getElementById('mainFrame');
+    if (url === 'index.html') {
+        frame.src = '';
+        frame.style.backgroundImage = "linear-gradient(to top left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), url('ing/Sea of Trees.jpg')";
+        frame.style.backgroundSize = "contain";
+        frame.style.backgroundRepeat = "no-repeat";
+        frame.style.backgroundPosition = "center";
+        frame.style.backgroundColor = "#fff";
+    } else {
+        frame.src = url;
+        frame.style.background = "#fff"; // 載入內容時移除背景圖
+    }
+}
+    </script>
         
-        <div style="
-        width: 50%; 
-        height: 50%; 
-        background-image: 
-          linear-gradient(to top left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
-          url('ing/Sea of Trees.jpg');
-        background-size: contain;      /* ✅讓圖片縮放到容器大小內，完整顯示 */
-        background-repeat: no-repeat;  /* ✅防止重複 */
-        background-position: center;   /* ✅置中圖片 */
-        margin: 20px auto; /* ✅置中圖片 */
-      "></div>
+        <!-- <div style="
+            width: 50%; 
+            height: 50%; 
+            background-image: 
+            linear-gradient(to top left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
+            url('ing/Sea of Trees.jpg');
+            background-size: contain;      /* ✅讓圖片縮放到容器大小內，完整顯示 */
+            background-repeat: no-repeat;  /* ✅防止重複 */
+            background-position: center;   /* ✅置中圖片 */
+            margin: 20px auto; /* ✅置中圖片 */
+        ">
+        </div> -->
       
         <!-- 連結 -->
 

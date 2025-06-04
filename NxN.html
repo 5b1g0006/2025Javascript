@@ -1,0 +1,105 @@
+<!-- 作業 homework.html -->
+
+<!-- 後續要加入其他作業和分類 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript作業</title>
+
+    <style>
+        .container {
+            margin-top: 20px;
+        }
+
+        div#myId {
+            background-color: antiquewhite;
+            padding: 30px;
+            margin: 0 auto;
+            margin-top: 20px;
+            position: relative; /* 設定相對定位，讓內部的圖片可以絕對定位 */
+            min-height: 250px; /* 確保容器有足夠高度顯示圖片 */
+        }
+
+        .image-container {
+            position: absolute; /* 絕對定位，基於父容器 */
+            top: 50%; /* 垂直置中 */
+            right: 20px; /* 距離右邊 20px */
+            transform: translateY(-50%); /* 修正垂直置中的偏移 */
+            background-image: url('ing/cat.jpg'); /* 替換為你的圖案檔案路徑 */
+            background-size: contain; /* 圖案大小，使用 contain 讓圖案完整顯示 */
+            background-repeat: no-repeat; /* 防止圖案重複 */
+            background-position: center; /* 圖案置中 */
+            width: 200px; /* 設定圖案容器寬度 */
+            height: 200px; /* 設定圖案容器高度 */
+            z-index: 1; /* 確保圖片在表格上方 */
+        }
+
+        table, tr, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            text-align: center;
+            margin: 0 auto;
+            z-index: 0; /* 確保表格在圖片下方 */
+        }
+
+        td {
+            padding: 5px;
+            text-align: center;
+        }
+
+        a{
+            color: white;
+            background-color: rgb(134, 211, 255);
+            text-decoration: none;
+            padding: 10px;
+            border: 1px solid rgb(234, 255, 175);
+        }
+        a:link{
+            color: rgb(0, 88, 139);
+        }
+        a:visited{
+            color: rgb(0, 148, 216);
+        }
+    </style>
+
+    <script>
+        function myFunction() {
+            var n = document.getElementById("numberInput").value;
+            var str = "<table>";
+
+            for (let i = 1; i <= n; i++) {
+                str += "<tr>";
+                for (let j = 1; j <= n; j++) {
+                    str += `<td> ${i} x ${j} = ${i * j} </td>`;
+                }
+                str += "</tr>";
+            }
+            str += "</table>";
+
+            document.getElementById("table-container").innerHTML = str;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>N*N乘法表</h1>
+    <label for="numberInput">請輸入數字:</label>
+    <input type="number" id="numberInput" placeholder="請輸入數字">
+    <input type="button" value="OK" title="OK" onclick="myFunction()">
+    <div id="myId">
+        <!-- 表格容器 -->
+        <div id="table-container"></div>
+        <!-- 圖片容器 -->
+        <div class="image-container"></div>
+    </div>
+</body>
+
+</html>

@@ -13,7 +13,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     height: 100vh;
     margin: 0;
 }
@@ -24,10 +23,37 @@ a{
     text-decoration: none;
     padding: 10px;
     border: 1px solid rgb(234, 255, 175);
+    border-radius: 20px; /*調整邊框圓弧*/
+    box-shadow: 0 0 15px rgb(255, 255, 255);
 }
 a:link{
     color: rgb(0, 88, 139);
 }
 a:visited{
     color: rgb(0, 148, 216);
+}
+
+a:hover {
+    background-color: rgb(173, 232, 255); /* 背景變亮一點 */
+    color: rgb(0, 60, 100); /* 文字變深一點 */
+    box-shadow: 0 0 20px white; /* 陰影加強 */
+    transform: scale(1.05); /* 微微放大 */
+    transition: all 0.3s ease; /* 平滑過渡效果 */
+}
+
+.mainFrame{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    font-size: 2rem;
+    color: #333;
+    border: 5px solid lightblue;
+    background-color: rgba(255,255,255,0.1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px; /*調整邊框圓弧*/
 }

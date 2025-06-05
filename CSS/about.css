@@ -1,35 +1,24 @@
 /* 關於我(about.html)的css樣式 */
 
 div#myresearch {
-    width: 20%;
+    height: auto;
+    width: auto;
     background-color: rgba(233, 254, 255, 0.2);
     padding: 30px;
+    z-index: 1;          /* 確保內容顯示在遮罩上面 */
+    color: rgb(0, 15, 97);        /* 白色文字比較清楚 */
 }
 
-h3 {
+h1 {
     color: white;
+    text-align: center;
 }
 
 body {
-    /* 只保留這些，刪除 background-color 和 background-blend-mode */
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0;
-}
-
-a{
-    color: white;
-    background-color: rgb(134, 211, 255);
-    text-decoration: none;
-    padding: 10px;
-    border: 1px solid rgb(234, 255, 175);
-}
-a:link{
-    color: rgb(0, 88, 139);
-}
-a:visited{
-    color: rgb(0, 148, 216);
 }

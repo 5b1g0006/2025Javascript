@@ -24,17 +24,3 @@ body {
     background-color: rgba(255, 255, 255, 0.5); /* 加入白色半透明覆蓋 */
     background-blend-mode: lighten; /* 混合模式 */
 }
-
-a{
-    color: white;
-    background-color: rgb(134, 211, 255);
-    text-decoration: none;
-    padding: 10px;
-    border: 1px solid rgb(234, 255, 175);
-}
-a:link{
-    color: rgb(0, 88, 139);
-}
-a:visited{
-    color: rgb(0, 148, 216);
-}

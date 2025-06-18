@@ -25,7 +25,7 @@
         </div>
         <div class="content">
             <div id="homeworkDetail">
-                <p>請點選左側作業查看簡介。</p>
+                
             </div>
         </div>
     </div>
@@ -34,20 +34,17 @@
             const detail = document.getElementById('homeworkDetail');
             if (type === 'NxN') {
                 detail.innerHTML = `
-                    <h2>N*N乘法表</h2>
-                    <p>這是一個動態產生 N*N 乘法表的練習。</p>
+                    <h2>這是一個動態產生 N*N 乘法表的練習。</h2>
                     <a href="NxN.html" target="_blank">前往網頁</a>
                 `;
             } else if (type === 'water') {
                 detail.innerHTML = `
-                    <h2>水立方試管遊戲</h2>
-                    <p>仿照水排序遊戲的網頁版實作。</p>
+                    <h2>仿照水排序遊戲的網頁版實作。</h2>
                     <a href="https://5b1g0006.github.io/2025_WaterPuzzle/" target="_blank">前往網頁</a>
                 `;
             } else if (type === 'react') {
                 detail.innerHTML = `
-                    <h2>React + Vite 作業</h2>
-                    <p>使用 React 與 Vite 製作的作業專案。</p>
+                    <h2>使用 React 與 Vite 製作的作業專案。</h2>
                     <a href="https://5b1g0006.github.io/2025-react-app/" target="_blank">前往網頁</a>
                 `;
             }

@@ -41,6 +41,13 @@ a:hover {
     transition: all 0.3s ease; /* 平滑過渡效果 */
 }
 
+.link-bar {
+    display: flex;
+    justify-content: center;  /* 水平置中 */
+    gap: 10px;                /* 連結間距 */
+    flex-wrap: wrap;          /* 換行排列（如有需要） */
+}
+
 .mainFrame{
     width: 50%;
     height: 60%;

@@ -1,0 +1,93 @@
+/* 作業總攬 */
+
+/* 首頁(index.html)的css樣式 */
+
+/* h1、p (標題和段落內容) 的css */
+p {
+    text-align: center; /* 置中標題 */
+    color: rgb(0, 217, 255); /* 設定標題文字顏色 */
+}
+
+a{
+    color: white;
+    background-color: rgb(134, 211, 255);
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid rgb(234, 255, 175);
+    border-radius: 20px; /*調整邊框圓弧*/
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+}
+a:link{
+    color: rgb(0, 88, 139);
+}
+a:visited{
+    color: rgb(0, 148, 216);
+}
+
+a:hover {
+    background-color: rgb(173, 232, 255); /* 背景變亮一點 */
+    color: rgb(0, 60, 100); /* 文字變深一點 */
+    box-shadow: 0 0 20px white; /* 陰影加強 */
+    transform: scale(1.05); /* 微微放大 */
+    transition: all 0.3s ease; /* 平滑過渡效果 */
+}
+
+.homework-container {
+    display: flex;
+    max-width: 900px;
+    margin: 40px auto;
+    min-height: 400px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+    width: 200px;
+    background: rgba(134, 211, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px 0;
+    border-radius: 15px 0 0 15px;
+}
+
+.sidebar button {
+    background: rgb(134, 211, 255);
+    color: rgb(0, 60, 100);
+    border: none;
+    margin: 10px 20px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+.sidebar button:hover {
+    background: rgb(173, 232, 255);
+    color: rgb(0, 88, 139);
+}
+
+.content {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#homeworkDetail a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: rgb(0, 217, 255);
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+#homeworkDetail a:hover {
+    background: rgb(0, 148, 216);
+}

@@ -64,3 +64,16 @@ a:hover {
     background-position: center;
     border-radius: 15px; /*調整邊框圓弧*/
 }
+
+@media (max-width: 700px) {
+    .mainFrame {
+        width: 95%;
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+    .link-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+}

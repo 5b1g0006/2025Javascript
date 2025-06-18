@@ -6,6 +6,13 @@ h1, p {
     color: rgb(0, 217, 255); /* 設定標題文字顏色 */
 }
 
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 body {
     background: 
         /* linear-gradient(rgba(0, 0, 50, 0.3), rgba(0, 0, 80, 0.2)), 深藍透明背景 */

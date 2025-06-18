@@ -42,6 +42,27 @@
             -->
         </div>
 
+        <!--框線文字主題顏色切換程式碼...
+         <div style="text-align:center; margin: 10px 0;">
+            框線顏色：<input type="color" id="borderColorPicker" value="#00d9ff" onchange="updateMainFrameStyle()">
+            文字顏色：<input type="color" id="fontColorPicker" value="#00d9ff" onchange="updateMainFrameStyle()">
+        </div>
+
+        <script>
+        
+
+        function updateMainFrameStyle() {
+            const frame = document.querySelector('.mainFrame');
+            const borderColor = document.getElementById('borderColorPicker').value;
+            const fontColor = document.getElementById('fontColorPicker').value;
+            if (frame) {
+                frame.style.borderColor = borderColor;
+                frame.style.color = fontColor;
+            }
+        }
+        </script>
+        -->
+
         <div id="mainFrame" class="mainFrame">
             <!-- 這裡可以放首頁介紹文字 -->
              歡迎來到王芷涵的JavaScript課程網站！<br>
@@ -69,12 +90,24 @@
                 const btn = document.getElementById('themeToggleBtn');
                 btn.style.backgroundImage = "url('./ing/moon.png')";
                 isDay = true;
+                
+                const frame = document.querySelector('.mainFrame');
+                if (frame) {
+                    frame.style.borderColor = "rgb(160, 235, 255)";
+                    frame.style.color = "rgb(15, 35, 70)";
+                }
             }
             function setNightMode() {
                 document.body.style.backgroundImage = "url('./ing/starry night.jpg')";
                 const btn = document.getElementById('themeToggleBtn');
                 btn.style.backgroundImage = "url('./ing/sun.png')";
                 isDay = false;
+
+                const frame = document.querySelector('.mainFrame');
+                if (frame) {
+                    frame.style.borderColor = "lightblue";
+                    frame.style.color = "rgb(255, 255, 255)";
+                }
             }
 
         </script>

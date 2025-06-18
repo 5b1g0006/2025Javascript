@@ -23,7 +23,7 @@ div#myId {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 160px;               /* 可依需求調整 */
+    width: 160px;               
     height: 160px;
     margin: 0;
     flex-shrink: 0; 

@@ -84,3 +84,60 @@ a:hover {
         gap: 5px;
     }
 }
+
+
+.theme-toggle {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 15px;
+}
+
+.theme-toggle button {
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  color: white;
+  box-shadow: 0 0 10px white;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.theme-toggle button:hover {
+  background: rgba(255, 255, 255, 0.6);
+  transform: scale(1.1);
+}
+
+#themeToggleBtn {
+  background-size: cover;
+  background-position: center;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 0;
+  box-shadow: 0 0 10px white;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  background-color: rgba(255,255,255,0.3);
+}
+#themeToggleBtn:hover {
+  background-color: rgba(255,255,255,0.6);
+  transform: scale(1.1);
+}
+
+#nightModeBtn {
+  background-image: url('../ing/moon.png');
+  background-size: cover;
+  background-position: center;
+  font-size: 0; /* 隱藏 emoji 文字 */
+}
+#dayModeBtn {
+  background-image: url('../ing/sun.png');
+  background-size: cover;
+  background-position: center;
+  font-size: 0; /* 隱藏 emoji 文字 */
+}

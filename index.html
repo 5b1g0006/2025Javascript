@@ -19,9 +19,14 @@
     </head>
 
     <body>
+        <div class="theme-toggle">
+            <button id="themeToggleBtn" onclick="toggleTheme()"></button>
+        </div>
 
         <h1>103下學期五專三年級JavaScript程式設計課程</h1> <!-- 標題 -->
         <p>Hello JavaScript</p> <!-- 段落內容 -->
+
+        
 
         <div class="link-bar">
             <a href="index.html">首頁</a>
@@ -47,8 +52,31 @@
             function loadPage(url) {
                 const frame = document.getElementById('mainFrame');
                 frame.innerHTML = `<iframe src="${url}" style="width:100%;height:100%;border:none;"></iframe>`;
-                // frame.style.background = "#fff"; // 載入內容時移除背景圖
             }
+            // 預設為夜晚模式
+            let isDay = false;
+            setNightMode();
+
+            function toggleTheme() {
+                if (isDay) {
+                    setNightMode();
+                } else {
+                    setDayMode();
+                }
+            }
+            function setDayMode() {
+                document.body.style.backgroundImage = "url('./ing/starry morning.png')";
+                const btn = document.getElementById('themeToggleBtn');
+                btn.style.backgroundImage = "url('./ing/moon.png')";
+                isDay = true;
+            }
+            function setNightMode() {
+                document.body.style.backgroundImage = "url('./ing/starry night.jpg')";
+                const btn = document.getElementById('themeToggleBtn');
+                btn.style.backgroundImage = "url('./ing/sun.png')";
+                isDay = false;
+            }
+
         </script>
         
 

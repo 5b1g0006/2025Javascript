@@ -1,58 +1,64 @@
 /* 首頁(index.html)的css樣式 */
 
-/* h1、p (標題和段落內容) 的css */
-h1, p {
-    text-align: center; /* 置中標題 */
-    color: rgb(0, 217, 255); /* 設定標題文字顏色 */
-}
-
 html, body {
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    min-height: 100vh;  /* 最小高度為視窗高度，讓背景圖能鋪滿 */
+    padding: 0;         /* 移除內邊距 */
+    margin: 0;          /* 移除外邊距 */
+    overflow-x: hidden; /* 隱藏橫向滾動條，避免橫向溢出 */
 }
 
 body {
     background: 
         /* linear-gradient(rgba(0, 0, 50, 0.3), rgba(0, 0, 80, 0.2)), 深藍透明背景 */
-        url('../ing/starry night.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    margin: 0;
+        url('../ing/starry night.jpg'); /* 設定背景圖 */
+    background-size: cover;             /* 背景圖覆蓋整個區域 */
+    background-position: center;        /* 背景圖置中 */
+    background-repeat: no-repeat;       /* 背景圖不重複 */
+
+    height: 100vh;                      /* 設定高度為視窗高度 */
+    margin: 0;                          /* 移除外邊距 */
 }
 
-a{
-    color: white;
-    background-color: rgb(134, 211, 255);
-    text-decoration: none;
-    padding: 10px;
-    border: 1px solid rgb(234, 255, 175);
-    border-radius: 20px; /*調整邊框圓弧*/
-    box-shadow: 0 0 15px rgb(255, 255, 255);
+/* h1、p (標題和段落內容) 的css */
+h1, p {
+    text-align: center;        /* 置中標題文字 */
+    color: rgb(0, 217, 255); /* 設定標題文字顏色 */
 }
+
+
+a{ /* 設定 a 連結的基本樣式 */
+    color: white;                              /* 文字顏色 white 白色 */
+    background-color: rgb(134, 211, 255);      /* 背景色 */
+    text-decoration: none;                       /* 移除底線 */
+    padding: 10px;                               /* 內距 */
+    border: 1px solid rgb(234, 255, 175);      /* 邊框顏色 */
+    border-radius: 20px;                         /* 邊框圓弧 */
+    box-shadow: 0 0 15px rgb(255, 255, 255);   /* 陰影效果 */
+}
+/* a:link 未訪問連結的顏色 */
 a:link{
-    color: rgb(0, 88, 139);
-}
-a:visited{
-    color: rgb(0, 148, 216);
+    color: rgb(0, 88, 139); /* 顏色 */
 }
 
+/* a:visited 已訪問連結 */
+a:visited{
+    color: rgb(0, 148, 216); /* 顏色 */
+}
+
+/* 設定 a:hover 滑鼠移過時的效果 */
 a:hover {
     background-color: rgb(173, 232, 255); /* 背景變亮一點 */
-    color: rgb(0, 60, 100); /* 文字變深一點 */
-    box-shadow: 0 0 20px white; /* 陰影加強 */
-    transform: scale(1.05); /* 微微放大 */
-    transition: all 0.3s ease; /* 平滑過渡效果 */
+    color: rgb(0, 60, 100);               /* 文字變深一點 */
+    box-shadow: 0 0 20px white;           /* 陰影加強 */
+    transform: scale(1.05);                 /* 微微放大 */
+    transition: all 0.3s ease;              /* 平滑過渡效果 */
 }
 
 .link-bar {
-    display: flex;
+    display: flex;            /* 使用 flex 排列 */
     justify-content: center;  /* 水平置中 */
     gap: 10px;                /* 連結間距 */
-    flex-wrap: wrap;          /* 換行排列（如有需要） */
+    flex-wrap: wrap;          /* 自動換行 */
 }
 
 .mainFrame{
@@ -138,6 +144,6 @@ a:hover {
 #dayModeBtn {
   background-image: url('../ing/sun.png');
   background-size: cover;
-  background-position: center;
+  background-position: center; 
   font-size: 0; /* 隱藏 emoji 文字 */
 }

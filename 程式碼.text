@@ -1,7 +1,29 @@
-目前所用到的網頁連結 (複製用)
+a 網頁連結
 <a href="index.html">返回首頁</a>
 <a href="about.html">關於我</a>
 <a href="research.html">研究</a>
 <a href="homework.html">作業</a>         
 <a href="https://5b1g0006.github.io/2025_WaterPuzzle/"> 水立方試管遊戲 作業 </a> //作業檔案名稱:2025_WaterPuzzle 
 <a href="https://5b1g0006.github.io/2025-react-app/">React + Vite 作業 </a> //作業檔案名稱:2025-react-app 
+
+-----------------------------------
+background        背景
+background-color  背景顏色
+background-image  背景圖片
+background-size   背景大小
+background-repeat 背景重複方式
+
+---------------------------------------------------------
+px 像素（絕對長度，最常用）、 % 百分比（相對於父元素）、 em 和 rem 相對字體大小的單位、 vw 和 vh 相對於視窗寬度/高度的百分比
+width   寬度
+height  高度
+padding 內邊距
+margin  外邊距
+
+-------------------------------------------------------------------------
+left 靠左對齊（預設值）、right 靠右對齊、center 置中對齊、justify 左右對齊（兩端對齊）
+text-align 行內文字對齊方式
+
+-----------------------
+border 邊框
+border-radius 調整邊框圓弧

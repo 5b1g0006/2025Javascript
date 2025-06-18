@@ -9,24 +9,36 @@ div#myId {
     padding: 30px;
     margin: 0 auto;
     margin-top: 20px;
-    position: relative; /* 設定相對定位，讓內部的圖片可以絕對定位 */
     min-height: 250px; /* 確保容器有足夠高度顯示圖片 */
 }
 
-.image-container {
-    position: absolute; /* 絕對定位，基於父容器 */
-    top: 50%; /* 垂直置中 */
-    right: 20px; /* 距離右邊 20px */
-    transform: translateY(-50%); /* 修正垂直置中的偏移 */
-    background-image: url('ing/cat.jpg'); /* 替換為你的圖案檔案路徑 */
-    background-size: contain; /* 圖案大小，使用 contain 讓圖案完整顯示 */
-    background-repeat: no-repeat; /* 防止圖案重複 */
-    background-position: center; /* 圖案置中 */
-    width: 200px; /* 設定圖案容器寬度 */
-    height: 200px; /* 設定圖案容器高度 */
-    z-index: 1; /* 確保圖片在表格上方 */
+.table-cat-wrap {
+    display: flex;              /* 橫向排列 */
+    align-items: flex-start;    /* 上對齊 */
+    gap: 30px;                  /* 表格和貓貓間距 */
 }
 
+.image-container {
+    background-image: url('../ing/cat.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 160px;               /* 可依需求調整 */
+    height: 160px;
+    margin: 0;
+    flex-shrink: 0; 
+}
+@media (max-width: 700px) {
+    .table-cat-wrap {
+        flex-direction: column; /* 小螢幕時上下排列 */
+        align-items: center;
+        gap: 10px;
+    }
+    .image-container {
+        width: 120px;
+        height: 120px;
+    }
+}
 table, tr, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -42,3 +54,4 @@ td {
     padding: 5px;
     text-align: center;
 }
+
